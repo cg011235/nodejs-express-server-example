@@ -30,7 +30,7 @@ promoRouter.route('/:promoID')
     })
     .put((req, res, next) => {
         res.write('Updating the promotion: ' + req.params.promoID + '\n');
-        res.end('Will update the dish: ' + req.body.name + ' with details: ' + req.body.description);
+        res.end('Will update the promotion: ' + req.body.name + ' with details: ' + req.body.description);
     })
     .post((req, res, next) => {
         res.statusCode = 403;
